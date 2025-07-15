@@ -24,35 +24,30 @@ class PredictionService:
 
     def predict_species_distribution(self, location: Dict[str, float], date: datetime) -> Dict:
         """Predict fish species distribution for a given location and date"""
-        if not self.species_model:
-            # Mock data if no model loaded
-            return {
-                "anchovy": 0.7,
-                "sardine": 0.5,
-                "tuna": 0.3,
-                "mackerel": 0.6
-            }
+            # Mock data cuz need a model
+        return {
+            "anchovy": 0.7,
+            "sardine": 0.5,
+            "tuna": 0.3,
+            "mackerel": 0.6
+        }
         
         # In a real implementation, we would use the model here
         # features = prepare_features(location, date)
         # predictions = self.species_model.predict(features)
         # return format_predictions(predictions)
-        
-        return {}
 
     def predict_optimal_routes(self, start_point: Dict[str, float], date: datetime) -> List[Dict]:
         """Predict optimal fishing routes from a starting point"""
-        if not self.location_model:
-            # Mock data if no model loaded
-            return [
-                {"lat": start_point["lat"] + 0.1, "lng": start_point["lng"] + 0.1, "score": 0.8},
-                {"lat": start_point["lat"] - 0.05, "lng": start_point["lng"] + 0.15, "score": 0.7},
-                {"lat": start_point["lat"] + 0.2, "lng": start_point["lng"] - 0.1, "score": 0.65},
-            ]
+    
+        # Mock data
+        return [
+            {"lat": start_point["lat"] + 0.1, "lng": start_point["lng"] + 0.1, "score": 0.8},
+            {"lat": start_point["lat"] - 0.05, "lng": start_point["lng"] + 0.15, "score": 0.7},
+            {"lat": start_point["lat"] + 0.2, "lng": start_point["lng"] - 0.1, "score": 0.65},
+        ]
         
         # In a real implementation, we would use the model here
         # features = prepare_route_features(start_point, date)
         # predictions = self.location_model.predict(features)
         # return format_routes(predictions)
-        
-        return []
