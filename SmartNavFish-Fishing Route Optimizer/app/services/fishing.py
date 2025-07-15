@@ -40,7 +40,6 @@ class FishingService:
             "distribution": [
                 {"lat": 9.9312, "lng": 76.2673, "density": 0.8},
                 {"lat": 9.9415, "lng": 76.2897, "density": 0.6},
-                # ... more points
             ]
         }
 
