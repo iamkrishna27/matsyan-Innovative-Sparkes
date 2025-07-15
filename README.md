@@ -62,8 +62,8 @@ MongoDB 5+
 ### 1. Clone Repository  
 
 ```bash
-git clone https://github.com/your-repo/smartnavfish.git
-cd smartnavfish
+git clone https://github.com/matsyan-Innovative-Sparkes/SmartNavFish-Fishing Route Optimizer.git
+cd SmartNavFish-Fishing Route Optimizer
 ```
 
 ### 2. Set Up Environment  
@@ -84,8 +84,8 @@ pip install -r requirements.txt
 
 ```bash
 # PostgreSQL Setup
-createdb smartnavfish
-psql -U postgres -d smartnavfish -c "CREATE EXTENSION postgis;"
+createdb SmartNavFish-Fishing Route Optimizer
+psql -U postgres -d SmartNavFish-Fishing Route Optimizer -c "CREATE EXTENSION postgis;"
 
 # MongoDB Setup (ensure service is running)
 ```
