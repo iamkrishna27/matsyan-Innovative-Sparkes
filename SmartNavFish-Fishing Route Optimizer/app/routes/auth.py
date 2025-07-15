@@ -29,12 +29,12 @@ class UserCreate(BaseModel):
 
 @router.post("/register", response_model=Token)
 async def register(user_data: UserCreate, db: Session = Depends(get_db)):
-    # Check if user already exists
+
     db_user = db.query(User).filter(User.username == user_data.username).first()
     if db_user:
         raise HTTPException(status_code=400, detail="Username already registered")
+
     
-    # Create new user
     hashed_password = get_password_hash(user_data.password)
     db_user = User(
         username=user_data.username,
