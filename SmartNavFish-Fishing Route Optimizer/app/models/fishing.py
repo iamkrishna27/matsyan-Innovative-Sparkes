@@ -7,9 +7,9 @@ class FishingZone(Base):
 
     id = Column(Integer, primary_key=True, index=True)
     zone_name = Column(String, index=True)
-    coordinates = Column(JSON)  # GeoJSON format
-    fish_species = Column(JSON)  # List of common species
-    restrictions = Column(JSON)  # Any fishing restrictions
+    coordinates = Column(JSON)
+    fish_species = Column(JSON)
+    restrictions = Column(JSON)
     created_at = Column(DateTime(timezone=True), server_default=func.now())
 
 class MarineProtectedArea(Base):
@@ -17,7 +17,7 @@ class MarineProtectedArea(Base):
 
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String, index=True)
-    coordinates = Column(JSON)  # GeoJSON format
+    coordinates = Column(JSON)
     restrictions = Column(String)
     authority = Column(String)
     created_at = Column(DateTime(timezone=True), server_default=func.now())
