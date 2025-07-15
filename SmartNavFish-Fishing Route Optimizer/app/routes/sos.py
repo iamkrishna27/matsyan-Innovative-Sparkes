@@ -20,10 +20,10 @@ def send_sos(
     db: Session = Depends(get_db),
     current_user: User = Depends(get_current_user)
 ):
-    # Initialize Twilio client
+    #Twilio Client
     client = Client(settings.TWILIO_ACCOUNT_SID, settings.TWILIO_AUTH_TOKEN)
     
-    # Format emergency message
+    #emergency msg
     message_body = f"""
     EMERGENCY ALERT FROM SMARTNAVFISH:
     User: {current_user.username} ({current_user.phone_number})
@@ -40,7 +40,7 @@ def send_sos(
         message = client.messages.create(
             body=message_body,
             from_=settings.TWILIO_PHONE_NUMBER,
-            to=current_user.phone_number  # In real app, this would be emergency contacts
+            to=current_user.phone_number  # In real implementation, this would be emergency contacts
         )
         
         return {"status": "success", "message_sid": message.sid}
