@@ -120,10 +120,6 @@ gunicorn -w 4 -k uvicorn.workers.UvicornWorker app.main:app
 ![Dashboard Preview](https://example.com/smartnavfish-demo.gif)  
 *Real-time fishing heatmap with optimized routes*
 
-### Mobile App  
-![Mobile Screens](https://example.com/mobile-screens.png)  
-*Left: SOS feature | Right: Catch logging*
-
 ---
 
 ## 🌐 Live Deployment  
@@ -138,7 +134,7 @@ gunicorn -w 4 -k uvicorn.workers.UvicornWorker app.main:app
 
 ---
 
-## 👥 Team Innovative Sparkles  
+## 👥 Team Innovative Sparkes  
 
 | Member | Role | Contribution |
 |--------|------|--------------|
@@ -150,6 +146,6 @@ gunicorn -w 4 -k uvicorn.workers.UvicornWorker app.main:app
 ---
 
 <div align="center">
-  <h3>🚢 Helping Fishermen Navigate Smarter Since 2023</h3>
+  <h3>🚢 Helping Fishermen Navigate Smarter</h3>
   <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDFoY2V5d3R4YzB0bWt4eWJ6d2R1Z3JtY3R5a2N6bWZqZ2J5eGZ0biZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7TKsQ8XLI3Zfgu9W/giphy.gif" width="200"/>
 </div>
