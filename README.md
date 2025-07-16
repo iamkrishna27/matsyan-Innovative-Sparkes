@@ -140,10 +140,10 @@ gunicorn -w 4 -k uvicorn.workers.UvicornWorker app.main:app
 
 | Member | Role | Contribution |
 |--------|------|--------------|
-| Krishna N | Team Lead | AI Architecture & Backend |
+| Krishna N | DevOps Engineer | Cloud Engineer |
 | Miracline Gladys J | UI/UX Expert | Flutter Mobile App |
 | Karthika V | Data Scientist | ML Model Training |
-| Madhav R | DevOps Engineer | Cloud Deployment |
+| Madhav R | Team Lead | AI Architecture & Backend |
 
 ---
 
