@@ -46,6 +46,8 @@
 | AI Predictions | Scikit-learn + TensorFlow Lite |
 | Offline Mode | SQLite + Hive (Flutter) |
 | SOS System | Twilio API + Firebase |
+| Weather Data | OpenWeatherMap + World Tides API |
+| Authentication | JWT + OAuth2 |
 
 ---
 
